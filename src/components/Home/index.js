@@ -5,7 +5,6 @@ import Grid from "@mui/material/Grid";
 import { useGetAllCurrentIssues } from "./hooks/useGetAllCurrentIssues";
 // custom components
 import IssueCard from "./IssueCard";
-import IssueModal from "./IssueModal";
 
 function Home() {
   // get all current issue hook
