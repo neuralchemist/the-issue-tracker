@@ -24,7 +24,7 @@ function Home() {
     all_current_issues_state.isSuccess &&
     all_current_issues_state.data.length === 0
   ) {
-    return <p>No document in the collction</p>;
+    return <p>No document in the collection</p>;
   }
 
   return (
