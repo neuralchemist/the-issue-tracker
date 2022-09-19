@@ -1,5 +1,4 @@
 // mui5
-import Avatar from "@mui/material/Avatar";
 import CssBaseline from "@mui/material/CssBaseline";
 // react-router-dom
 import { NavLink } from "react-router-dom";
