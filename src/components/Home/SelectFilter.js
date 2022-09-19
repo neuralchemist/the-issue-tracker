@@ -3,7 +3,7 @@ import React from "react";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 // styled components
-import { StyledFilter, styledFilter } from "./styledComponents"
+import { StyledFilter } from "./styledComponents"
 
 function SelectFilter({ filterValue, setFilterValue }) {
   const handleChange = (event) => {

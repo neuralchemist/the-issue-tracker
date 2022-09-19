@@ -4,7 +4,8 @@ import Card from "@mui/material/Card";
 import CardHeader from "@mui/material/CardHeader";
 import IconButton from "@mui/material/IconButton";
 import CardActions from "@mui/material/CardActions";
-import Box from "@mui/system/Box";
+import Box from '@mui/material/Box';
+
 
 export const StyledCard = styled(Card)(({ theme }) => ({
   // mobile
