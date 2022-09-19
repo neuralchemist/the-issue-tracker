@@ -20,10 +20,11 @@ function EditButton({ issue }) {
   return (
     <Button
       size="small"
-      color="primary"
-      variant="contained"
+      color="info"
+      variant="outlined"
       startIcon={<EditIcon />}
       onClick={handleClick}
+      sx={{width: "120px"}}
     >
       Edit
     </Button>

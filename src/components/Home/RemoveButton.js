@@ -1,6 +1,6 @@
 import React from "react";
 // mui 5
-import EditIcon from "@mui/icons-material/Edit";
+import DeleteIcon from '@mui/icons-material/Delete';
 import Button from "@mui/material/Button";
 // custom hooks
 import { useRemoveIssue } from "./hooks/useRemoveIssue";
@@ -18,11 +18,12 @@ function RemoveButton({ issue }) {
   return (
     <Button
       size="small"
-      color="secondary"
-      variant="contained"
-      startIcon={<EditIcon />}
+      color="warning"
+      variant="outlined"
+      startIcon={<DeleteIcon />}
       onClick={handleClick}
       disabled={delete_issue_state.isLoading}
+      sx={{width: "120px"}}
     >
       Remove
     </Button>
