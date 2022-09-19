@@ -7,7 +7,7 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { ReactQueryDevtools } from "react-query/devtools";
 // custom hook
 import { UserProvider } from "./Firebase/firebase-auth";
-import { ColorModeProvider } from "./context/ColorModeContext";
+import { CustomThemeProvider } from "./context/CustomThemeContext";
 // component
 import Layout from "./components/Layout";
 
@@ -17,12 +17,12 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
-        <ColorModeProvider>
+        <CustomThemeProvider>
           <UserProvider>
             <CssBaseline />
             <Layout />
           </UserProvider>
-        </ColorModeProvider>
+        </CustomThemeProvider>
       </BrowserRouter>
       <ReactQueryDevtools initialIsOpen={false} position="bottom-right" />
     </QueryClientProvider>

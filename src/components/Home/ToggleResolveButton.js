@@ -10,7 +10,7 @@ import { extractStatus } from "../IssueForm/utils";
 // custom hooks
 import { useUpdateIssue } from "./hooks/useUpdateIssue";
 
-function ResolvedButton({ issue }) {
+function ToggleResolveButton({ issue }) {
   // custom update hook
   const update_issue_state = useUpdateIssue();
 
@@ -35,15 +35,16 @@ function ResolvedButton({ issue }) {
   return (
     <Button
       size="small"
-      color="primary"
-      variant="contained"
+      color="info"
+      variant="outlined"
       startIcon={icon_content}
       onClick={handleClick}
       disabled={update_issue_state.isLoading}
+      sx={{width: '120px'}}
     >
       {label_content}
     </Button>
   );
 }
 
-export default ResolvedButton;
+export default ToggleResolveButton;
