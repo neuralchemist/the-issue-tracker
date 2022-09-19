@@ -9,11 +9,10 @@ import { StyledCardActions, ExpandMore } from "./styledComponents";
 import CollapseDetails from "./CollapseDetails";
 import PriorityContent from "./PriorityContent";
 import AnonymousActions from "./AnonymousActions";
-
-// custom hooks
-import { useUserConsumer } from "../../Firebase/firebase-auth";
 import AssigneeActions from "./AssigneeActions";
 import AuthorActions from "./AuthorActions";
+// custom hooks
+import { useUserConsumer } from "../../Firebase/firebase-auth";
 
 /**
  * Show information about the issue.
