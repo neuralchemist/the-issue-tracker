@@ -1,71 +1,130 @@
-# Getting Started with Create React App
+# the-issue-tracker
+
+## Table of Contents
+
+- [About](#about)
+- [Features and Stack](#features-and-stack)
+- [Screenshots](#screenshots)
+- [Getting Started](#getting-started)
+- [Future Work](#challenges)
+- [Create React App](#bootstrapped-with-create-react-app)
+
+## About
+
+**The Issue Tracker** is a mobile friendly website to track issues by team members in a project.
+
+## Features and Stack
+
+### Features
+
+- fully responsive with support for mobile, tablet and desktop. 
+- user can signup, signin  using email and password
+- user authentication  and authorization done with firebase.
+- user session maintained using react useState hook. 
+- backend logic and security rules implemented and tested with firebase CLI.
+- data is cached using react-query to optimize network request while page hopping.
+- user is remembered and is automatically signed in next time user visit the page.
+- form with validation to create and edit issue.
+- authorized user can perform CRUD operation in firestore database.
+- only signed in user can create issues.
+- only creator and assignee of issue can update the issues.
+- only assignee of issue can resolve  an issue.
+- only cretor of issue can delete an issue if it is resolved. 
+- issues are sorted according to priority.
+- user can filter created and assigned issues.
+- react useState and Context hook to persist and share state in the app.
+- react query to read, write and cache data from backend.
+- react-hook-form to maintain form states.
+- react router to navigate pages.
+- documented for code maintainability.
+- can toggle between light and dark theme.
+- fully automated CI / CD pipeline implemented with github and github actions.
+- deployed and hosted in firebase.
+
+### Stack
+
+- React
+- React Router
+- React Hook Form
+- React Query
+- Material UI
+- yup
+- Firebase
+- Github
+- Github actions
+
+## Screenshots
+
+- Landing Page  (desktop view)
+
+<img src="screenshots/landing-desktop.png" width="800" height="800">
+
+- Landing Page (mobile view)
+
+<img src="screenshots/landing-mobile.png" width="400" height="500">
+
+- Landing Page Light Theme (desktop view)
+
+<img src="screenshots/landing-light-desktop.png" width="600" height="600">
+
+- Filter Issue (tablet view)
+
+<img src="screenshots/filter-issue-tablet.png" width="600" height="600">
+
+- Create Issue (tablet view)
+
+<img src="screenshots/create-issue-tablet.png" width="600" height="600">
+
+- Edit Issue (tablet view)
+
+<img src="screenshots/edit-issue-tablet.png" width="600" height="600">
+
+- SignUp (tablet view)
+
+<img src="screenshots/signup-tablet.png" width="600" height="600">
+
+## Getting started
+
+Below you'll find the instructions for setting up the project locally
+
+### Clone repo and install dependencies
+
+```bash
+# Clone the repo
+git clone https://github.com/neuralchemist/the-issue-tracker.git
+
+# Install dependencies
+cd the-issue-tracker
+npm install
+```
+
+### Add env variables
+
+Create `.env.local` file, and add firebase keys.
+
+### Start the app
+
+```bash
+# Start development server
+npm start
+```
+
+The app should be running at: [http://localhost:3000](http://localhost:3000/)
+
+## Future Work
+
+- show card skeleton in home page while loading (done)
+- send assignee notification when issue is assigned.
+- option to upload image of the issue.
+- option to show 'in progress' status when assignee is working on the issue.
+- option to filter issues according to projects.
+- add bar chart to show number of  issues according to priority.
+- authenticate using Facebook, GitHub or Google
+
+These are some of the features I want to implement in future.
+
+## Bootstrapped with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# the-issue-tracker
+For the detailed description of available scripts see [CRA Documentation](https://create-react-app.dev/docs/available-scripts)
