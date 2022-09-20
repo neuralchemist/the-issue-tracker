@@ -7,7 +7,7 @@ function Copyright() {
   return (
     <Box sx={{ mt: 8, mb: 4 }}>
       <Typography variant="body2" color="text.secondary" align="center">
-        {"Copyright © TurabDev gmb "}
+        {"Copyright © StoicDev Gmb "}
       </Typography>
     </Box>
   );

@@ -21,6 +21,8 @@ function CustomTextField({ type = "text", label, name, required }) {
       <TextField
         type={type}
         label={label}
+        multiline
+        maxrows={8}
         required={required}
         error={!!errors[name]}
         helperText={errors[name]?.message ?? ""}

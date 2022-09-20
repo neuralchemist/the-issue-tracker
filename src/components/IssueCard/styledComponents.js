@@ -13,6 +13,7 @@ export const StyledCard = styled(Card)(({ theme }) => ({
   maxWidth: "345px",
   minHeight: "100px",
   borderRadius: theme.spacing(2),
+  border: theme.palette.mode === "light" ? "1px solid rgba(0, 0, 0, 0.3)" : "1px solid rgba(255, 255, 255, 0.3)" ,
 
   // tablet
   [theme.breakpoints.up("sm")]: {
