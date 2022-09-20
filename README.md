@@ -55,9 +55,9 @@
 
 ## Screenshots
 
-- Landing Page (tablet view)
+- Landing Page  (desktop view)
 
-<img src="screenshots/landing-tablet.png" width="500" height="500">
+<img src="screenshots/landing-desktop.png" width="500" height="500">
 
 - Landing Page (mobile view)
 
