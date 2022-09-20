@@ -57,31 +57,31 @@
 
 - Landing Page  (desktop view)
 
-<img src="screenshots/landing-desktop.png" width="500" height="500">
+<img src="screenshots/landing-desktop.png" width="800" height="800">
 
 - Landing Page (mobile view)
 
-<img src="screenshots/landing-mobile.png" width="400" height="600">
+<img src="screenshots/landing-mobile.png" width="400" height="500">
 
 - Landing Page Light Theme (desktop view)
 
-<img src="screenshots/landing-light-desktop.png" width="500" height="500">
+<img src="screenshots/landing-light-desktop.png" width="600" height="600">
 
 - Filter Issue (tablet view)
 
-<img src="screenshots/filter-issue-tablet.png" width="500" height="500">
+<img src="screenshots/filter-issue-tablet.png" width="600" height="600">
 
 - Create Issue (tablet view)
 
-<img src="screenshots/create-issue-tablet.png" width="500" height="500">
+<img src="screenshots/create-issue-tablet.png" width="600" height="600">
 
 - Edit Issue (tablet view)
 
-<img src="screenshots/edit-issue-tablet.png" width="500" height="500">
+<img src="screenshots/edit-issue-tablet.png" width="600" height="600">
 
 - SignUp (tablet view)
 
-<img src="screenshots/signup-tablet.png" width="500" height="500">
+<img src="screenshots/signup-tablet.png" width="600" height="600">
 
 ## Getting started
 
