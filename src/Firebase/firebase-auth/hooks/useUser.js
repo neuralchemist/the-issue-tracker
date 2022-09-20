@@ -1,6 +1,3 @@
-/**
- * New User hook
- */
 import { useEffect, useState } from "react";
 // firebase
 import { onAuthStateChanged } from "firebase/auth";
@@ -10,12 +7,17 @@ import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth, db } from "../../firebase-config";
 import { doc, setDoc } from "firebase/firestore";
 
+/**
+ * User hook
+ */
+
 export function useUser() {
   const [authPending, setAuthPending] = useState(true);
   const [user, setUser] = useState();
   const isSignedIn = user !== null;
 
   useEffect(() => {
+
     const onChange = (current_user) => {
       /**
        * called when firebase loads up the user
@@ -25,8 +27,10 @@ export function useUser() {
       setAuthPending(false);
     };
 
+    // mount
     const unsubscribe = onAuthStateChanged(auth, onChange);
 
+    // unmount
     return unsubscribe;
   }, []);
 
