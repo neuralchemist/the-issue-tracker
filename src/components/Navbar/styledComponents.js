@@ -21,7 +21,8 @@ export const StyledIcon = styled(Stack)(({ theme }) => ({
 
 
 export const StyledAvatar = styled(Avatar)(({ theme }) => ({
-	color: theme.palette.text.secondary,
+	// color: theme.palette.text.secondary,
+	backgroundColor: "goldenrod",
 	width: theme.spacing(4),
 	height: theme.spacing(4),
   // ------DEBUG--------

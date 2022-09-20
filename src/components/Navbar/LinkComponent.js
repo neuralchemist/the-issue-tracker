@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 function LinkComponent({ to, label, startIcon = null }) {
   let activeStyle = {
     textDecoration: "none",
-    borderBottom: "2px solid white",
+    borderBottom: "2px solid teal",
   };
 
   let inactiveStyle = {

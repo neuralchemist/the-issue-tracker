@@ -15,8 +15,8 @@ function Header({ heading }) {
         marginTop: 1,
       }}
     >
-      <Avatar sx={{mb: 1}}>
-        <AddAlertIcon color="primary"/>
+      <Avatar sx={{mb: 1 , backgroundColor: "inherit"}}>
+        <AddAlertIcon  sx={{color: "goldenrod"}} />
       </Avatar>
       <Typography component="h1" variant="h5">
         {heading}
