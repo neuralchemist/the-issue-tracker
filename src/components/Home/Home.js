@@ -10,6 +10,11 @@ import AllIssues from "./AllIssues";
 import CreatedIssues from "./CreatedIssues";
 import AssignedIssues from "./AssignedIssues";
 import SelectFilter from "./SelectFilter";
+import IssueCardSkeleton from "../IssueCard/IssueCardSkeleton";
+// styled components
+import { StyledHomeStack } from "./styledComponents";
+
+const skeleton_issues = [1, 2, 3, 4, 5, 6, 7, 8];
 
 function Home() {
   // set filter value
@@ -19,9 +24,17 @@ function Home() {
   //  get user hook
   const { user } = useUserConsumer();
 
-  // wait for all current issues to load
+  // show skeleton while waiting for all current issues to load
   if (all_current_issues_state.isLoading) {
-    return <Typography variant="h6">Loading...</Typography>;
+    return (
+      <Container maxWidth="lg" component="main">
+        <StyledHomeStack spacing={2}>
+          {skeleton_issues.map((issue) => (
+            <IssueCardSkeleton key={issue} />
+          ))}
+        </StyledHomeStack>
+      </Container>
+    );
   }
   // show error
   if (all_current_issues_state.isError) {

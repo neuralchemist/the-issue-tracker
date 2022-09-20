@@ -3,7 +3,7 @@ import { object, string } from "yup";
 
 
 export const schema = object({
-  title: string().max(50, "too long").required("Required"),
+  title: string().max(100, "too long").required("Required"),
   description: string().max(400, "too long").required("Required"),
   priority: string().required("Required"),
   assigned_id: string().required("Required"),
