@@ -11,7 +11,7 @@ function AccountComponent({ label }) {
   const avatarName = label ? label.slice(0, 1).toUpperCase() : "";
   let activeStyle = {
     textDecoration: "none",
-    borderBottom: "2px solid white",
+    borderBottom: "2px solid teal",
     paddingBottom: "12px",
   };
 
