@@ -16,7 +16,7 @@ function ToggleResolveButton({ issue }) {
 
   // mui5 icons
   const icon_content = issue.resolved ? <UndoIcon /> : <DoneIcon />;
-  const label_content = issue.resolved ? "Undo" : "Resolved";
+  const label_content = issue.resolved ? "Undo" : "Done";
 
   const handleClick = () => {
     const data = {

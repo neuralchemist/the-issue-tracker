@@ -5,6 +5,13 @@ import Chip from "@mui/material/Chip";
 /**
  *  priority = "high" | "medium" | "low"
  */
+
+let priorityColorMap = {
+  high: "error",
+  medium: "warning",
+  low: "info",
+};
+
 function PriorityContent({ issue }) {
   return (
     <>
@@ -18,7 +25,7 @@ function PriorityContent({ issue }) {
       ) : (
         <Chip
           label={issue.priority}
-          color="error"
+          color={priorityColorMap[issue.priority]}
           variant="filled"
           sx={{ width: "80px" }}
         />
