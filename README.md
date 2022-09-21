@@ -11,7 +11,7 @@
 
 ## About
 
-**The Issue Tracker** is a mobile friendly website to track issues by team members or companies in projects.
+**The Issue Tracker** is a mobile friendly website to track issues by team members in a project.
 
 ## Features and Stack
 
@@ -26,14 +26,12 @@
 - user is remembered and is automatically signed in next time user visit the page.
 - form with validation to create and edit issue.
 - authorized user can perform CRUD operation in firestore database.
-  - anyone can read an issue.
-  - only signed in user can create, update and delete an issue.
-  - issue can only be assigned to registered users in the list.
-  - only creator can edit an issue untill the issue is resolved.
-  - only creator can delete an issue after the issue is resolved.
-  - only assignee can resolve / undo an issue.
-- issues are sorted and color coded according to priority.
-- signed in user can filter issues based on created or assigned.
+- only signed in user can create issues.
+- only creator and assignee of issue can update the issues.
+- only assignee of issue can resolve  an issue.
+- only cretor of issue can delete an issue if it is resolved. 
+- issues are sorted according to priority.
+- user can filter created and assigned issues.
 - react useState and Context hook to persist and share state in the app.
 - react query to read, write and cache data from backend.
 - react-hook-form to maintain form states.
@@ -50,7 +48,7 @@
 - React Hook Form
 - React Query
 - Material UI
-- Yup
+- yup
 - Firebase
 - Github
 - Github actions
@@ -119,9 +117,9 @@ The app should be running at: [http://localhost:3000](http://localhost:3000/)
 - send assignee notification when issue is assigned.
 - option to upload image of the issue.
 - option to show 'in progress' status when assignee is working on the issue.
-- option to add compay_id and project_id to issues and users to group issues according to project and company.
-- add bar chart to show stats on issues according to priority.
-- authenticate using Facebook, GitHub or Google.
+- option to filter issues according to projects.
+- add bar chart to show number of  issues according to priority.
+- authenticate using Facebook, GitHub or Google
 
 These are some of the features I want to implement in future.
 
