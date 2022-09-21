@@ -4,7 +4,7 @@ import Grid from "@mui/material/Grid";
 // react-hook-form
 import { useForm, FormProvider } from "react-hook-form";
 // custom components
-import CustomTextField from "../CustomFormFields/CustomTextField";
+import CustomTextAreaField from "../CustomFormFields/CustomTextAreaField";
 import CustomSelectField from "../CustomFormFields/CustomSelectField";
 import CustomSubmitButton from "../CustomFormFields/CustomSubmitButton";
 import CustomError from "../CustomFormFields/CustomError";
@@ -50,8 +50,8 @@ function IssueForm({
           onSubmit={methods.handleSubmit(onSubmit)}
         >
           <Grid container spacing={1}>
-            <CustomTextField type="text" label="Title" name="title" required />
-            <CustomTextField
+            <CustomTextAreaField type="text" label="Title" name="title" required />
+            <CustomTextAreaField
               type="text"
               label="Description"
               name="description"

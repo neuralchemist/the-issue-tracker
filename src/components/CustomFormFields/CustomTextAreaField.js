@@ -1,10 +1,11 @@
+
 // mui 5
 import Grid from "@mui/material/Grid";
 import TextField from "@mui/material/TextField";
 // react-hook-form
 import { useFormContext } from "react-hook-form";
 
-function CustomTextField({ type = "text", label, name, required }) {
+function CustomTextAreaField({ type = "text", label, name, required }) {
   // react-hook-form
   const {
     register,
@@ -21,6 +22,8 @@ function CustomTextField({ type = "text", label, name, required }) {
       <TextField
         type={type}
         label={label}
+        multiline
+        maxrows={8}
         required={required}
         error={!!errors[name]}
         helperText={errors[name]?.message ?? ""}
@@ -31,4 +34,4 @@ function CustomTextField({ type = "text", label, name, required }) {
   );
 }
 
-export default CustomTextField;
+export default CustomTextAreaField;
