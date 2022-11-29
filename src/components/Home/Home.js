@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // mui5
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
@@ -13,6 +13,9 @@ import SelectFilter from "./SelectFilter";
 import IssueCardSkeleton from "../IssueCard/IssueCardSkeleton";
 // styled components
 import { StyledHomeStack } from "./styledComponents";
+// firebase analytics
+import { logEvent } from "firebase/analytics";
+import { analytics } from "../../Firebase/firebase-config";
 
 const skeleton_issues = [1, 2, 3, 4, 5, 6, 7, 8];
 
@@ -23,6 +26,13 @@ function Home() {
   const all_current_issues_state = useGetAllCurrentIssues();
   //  get user hook
   const { user } = useUserConsumer();
+
+  useEffect(() => {
+    // send anlytics on home page visit
+    logEvent(analytics, "screen_view", {
+      firebase_screen: "homepage_visited",
+    });
+  }, []);
 
   // show skeleton while waiting for all current issues to load
   if (all_current_issues_state.isLoading) {
